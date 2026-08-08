@@ -2,7 +2,7 @@ import btn from "../assets/bu.svg"
 import { useRef } from "react"
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
-
+import { Link } from 'react-router-dom'
 
 function Menu() {
     const zone = useRef(null)
@@ -21,7 +21,7 @@ function Menu() {
     })
     return (
         <>
-            <div className="fixed z-50 flex h-screen w-screen">
+            <div className="fixed z-50 flex h-full w-full">
                     <div className=" w-4/12 h-10/12 self-end">
                         <div className="text-end h-3/4">
                             <div>
@@ -38,7 +38,10 @@ function Menu() {
             </div>
             <div className="fixed z-50 flex h-screen w-screen">
                     <div ref={zone} className="mx-auto self-end h-3/12 ">
-                        <img onMouseEnter={something} onMouseOut={leave} className="button" src={btn} ></img>
+                        <Link to="./studio">
+                            <img onMouseEnter={something} onMouseOut={leave} className="button" src={btn} ></img>
+                        </Link>
+                        
                     </div>
             </div>
 

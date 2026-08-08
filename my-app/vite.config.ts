@@ -10,11 +10,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 // ScrollSmoother requires ScrollTrigger
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import svgr from 'vite-plugin-svgr'
 
 gsap.registerPlugin(ScrollTrigger,ScrollSmoother,ScrollToPlugin,CustomEase,CustomWiggle);
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react() ,tailwindcss(),],
+  plugins: [react() ,tailwindcss(), svgr()],
 })

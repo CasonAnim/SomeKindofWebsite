@@ -1,22 +1,29 @@
 import Header from './Header.jsx'
 import Footer from './Footer.jsx'
 import Info from './Info.jsx';
-import Card from './Card.jsx';
-import Bush from './decalayer/Bush.jsx';
+
+import Bush from './decalayer/Bush';
 import Test from './decalayer/Test.jsx';
 import Menu from  './ui/Menu.jsx';
 import FrameExam from './ui/FrameExam.jsx'
 import Navbar from './ui/Navbar.jsx'
-import A1 from './test/A1.jsx'
+import Studio from './pages/Studio.jsx'
+import A1 from './test/A1'
 import React , {useState} from 'react';
+import {Route , Routes} from "react-router-dom"
+import 'remixicon/fonts/remixicon.css'
 function App() {
   return (
-
     <>
-    <Navbar ></Navbar>
-    <Menu/>
-    <Bush/>
-    {/* <Test/> */}
+    <Navbar/>
+    <Routes>
+  
+    <Route exact path="/" element={<Bush/>} />
+    <Route  path="/studio" element={<Studio/>} />
+    {/* <Menu/>
+    <Bush/> */}
+    
+    </Routes>
     </>
 
   )

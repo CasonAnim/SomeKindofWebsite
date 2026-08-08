@@ -16,7 +16,7 @@ function A1() {
         }
     })
 
-    return (
+    return 
         
         <div className=" shadow-2xs shadow-black w-5/12">
             <p>
@@ -30,6 +30,6 @@ function A1() {
            </button>
         </div>
       
-    )
+    
 }
 export default A1 

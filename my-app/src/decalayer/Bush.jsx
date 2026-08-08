@@ -5,6 +5,7 @@ import bg from '../assets/bg.png'
 import { useRef } from "react"
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
+import Menu from '../ui/Menu'
 
 gsap.registerPlugin(useGSAP)
 
@@ -102,6 +103,7 @@ export default function Bush () {
     
     return (
         <div ref={zone}  className="zone overflow-hidden h-screen w-screen flex justify-center items-center">
+            <Menu/>
             <div  className="flex z-2  fixed  items-center justify-center m-0 h-[125vh] w-[125vw] Ly2">
                 <img className="w-full h-full " src={layer_2}/>
             </div>
@@ -111,7 +113,7 @@ export default function Bush () {
             <div  className="flex z-10 fixed left-7/12 items-center justify-center m-0 h-[125vh] w-[125vw] Ly0">
                 <img className="w-full h-full " src={layer_0}/>
             </div>
-            <div className="w-screen bg">
+            <div className="fixed items-center justify-center w-screen bg">
                 <img className="w-full h-full " src={bg}/>
             </div>
         </div>

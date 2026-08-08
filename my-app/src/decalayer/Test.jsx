@@ -39,7 +39,7 @@ export default function Test() {
     
 
     return(
-    <div className='flex justify-center items-center h-screen w-screen'>
+    <div className='flex justify-center items-center h-screen w-screen bg-gray-600'>
             <div onMouseMove={handleMousemove} onMouseLeave={Leave} ref={zone} className=' border-zinc-950 border-2  zone flex justify-center w-1/2 h-1/2 items-center'>
                 <div className=''>
                     <p className='test p-4 rounded-3xl text-amber-50 bg-amber-800'>HEllo</p>
