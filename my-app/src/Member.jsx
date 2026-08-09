@@ -9,7 +9,7 @@ import Footer from './Footer'
 function Member() {
     const members = [
         { name: "ธีรภัทร ทองคำ", role: "Lead Developer", desc: "6840012484", github: "https://casonanim.github.io/ForREsume/" , src: mem_1},
-        { name: "คชาทัช พฤฒิพงศภัค 2", role: "UI / UX Designer", desc: "6840011208", github: "https://pluemgamer.github.io/kachatus-resume-new/", src: mem_2 },
+        { name: "คชาทัช พฤฒิพงศภัค", role: "UI / UX Designer", desc: "6840011208", github: "https://pluemgamer.github.io/kachatus-resume-new/", src: mem_2 },
         { name: "รุจิภาส บุญหนุน", role: "Developer", desc: "6840012450", github: "https://tlm1000zaza-tech.github.io/Resume/",src: mem_3 },
         { name: "ไชยวัฒน์ สัญใจ", role: "QA Tester", desc: "6840012522", github: "https://chaiyawat-win.github.io/resume-Chaiyawat/",src: mem_4 },
         { name: "ภานุวัฒน์ บุดดาเพ็ง", role: "QA Tester", desc: "6840077110", github: "https://buddapengtonkla-wq.github.io/My-resume/",src: mem_5 },
