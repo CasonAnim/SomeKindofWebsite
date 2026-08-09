@@ -20,7 +20,7 @@ function Banner(props) {
                                     Worth the time... !
                                 </div>
                                 <div className="w-full montserrat-bold flex justify-center sm:justify-start mt-4 sm:mt-6 lg:mt-10">
-                                    <a href="" className="p-3 sm:p-4 lg:p-5 text-sm sm:text-base bg-[#75146A] text-white rounded-2xl sm:rounded-4xl">
+                                    <a href="#" className="p-3 sm:p-4 lg:p-5 text-sm sm:text-base bg-[#75146A] text-white rounded-2xl sm:rounded-4xl">
                                         Book now 10% off
                                     </a>
                                 </div>
