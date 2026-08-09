@@ -1,81 +1,72 @@
-    import Sukura from "../../assets/sakura.png"
-    import Magnify from "../../assets/magnifying-glass.svg?react"
-    import gsap from "gsap"
-    import { useGSAP } from "@gsap/react"
-    import { Link } from 'react-router-dom'
-    
+import Sukura from "../../assets/sakura.png"
+import Magnify from "../../assets/magnifying-glass.svg?react"
+import gsap from "gsap"
+import { useGSAP } from "@gsap/react"
+import { Link } from 'react-router-dom'
 
-    function Hero() {
+function Hero() {
 
-        const handleMouseEnter = ((e) => {
-            gsap.to( e.currentTarget, {
-                scale : 1.1,
-                ease : "sine.inOut",
-                duration : 0.2
-            })
+    const handleMouseEnter = ((e) => {
+        gsap.to(e.currentTarget, {
+            scale: 1.1,
+            ease: "sine.inOut",
+            duration: 0.2
         })
-        const handleMouseLeave = ((e) => {
-            gsap.to(e.currentTarget , {
-                scale : 1,
-                ease : "sine.inOut",
-                duration : 0.2
-            })
+    })
+    const handleMouseLeave = ((e) => {
+        gsap.to(e.currentTarget, {
+            scale: 1,
+            ease: "sine.inOut",
+            duration: 0.2
         })
+    })
 
-        return (
-                <>
-                <img className=" absolute  w-full h-full object-cover opacity-75 -z-10" src={Sukura} />
-                <div className="z-20 absolute w-full h-full flex items-end justify-center">
-                                    
-                    <div className="h-1/2 w-8/12">
-                        <div className=" rounded-[65px] w-full h-1/3 bg-white " >
-                            <div className="mx-3.5 h-full w-full flex flex-row items-center">
+    return (
+        <>
+        <img className="absolute w-full h-full object-cover opacity-75 -z-10" src={Sukura} />
+        <div className="z-20 w-full h-full flex items-center justify-center pb-6 sm:pb-0">
+            
+            <div className="w-11/12 sm:w-8/12">
+                <div className="bg-white p-2 sm:p-1.5 rounded-2xl overflow-hidden">
+                    <div className="grid grid-cols-2 md:flex md:justify-center md:items-center gap-y-3 md:gap-x-4 text-xs md:text-xl p-1 md:p-1.5">
 
-                                <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className=" mr-3 pr-6  pl-6.5  border-r-2 border-r-black/50 montserrat-cason">
-                                    <div className="text-[#F76363]">
-                                        Price
-                                    </div>
-                                    <p className=" opacity-50">
-                                        Which price do you prefer?
-                                    </p>
-                                </div>
-                                
-                                <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className=" mr-3 pr-6  pl-2.5  border-r-2 border-r-black/50 montserrat-cason">
-                                    <div className="text-[#F76363]">
-                                        Check In
-                                    </div>
-                                    <p className=" opacity-50">
-                                        Add Dates
-                                    </p>
-                                </div>
-                                <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className=" mr-6 pr-16  pl-2.5  border-r-2 border-r-black/50 montserrat-cason">
-                                    <div className="text-[#F76363]">
-                                        Check Out
-                                    </div>
-                                    <p className=" opacity-50">
-                                        Add Dates
-                                    </p>
-                                </div>
-                                <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className=" mr-6 pr-16  pl-2.5  border-r-2 border-r-black/50 montserrat-cason">
-                                    <div className="text-[#F76363]">
-                                        Guest
-                                    </div>
-                                    <p className=" opacity-50">
-                                        Add Guests
-                                    </p>
-                                </div>
-                                <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className=" justify-center items-center ml-2.5  h-8/12 aspect-square rounded-[100%] bg-[#F76363] flex">
-                                    <Magnify  className="w-1/2 h-1/2 text-white"/>
-                                </div>
+                        <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="min-w-0 montserrat-cason">
+                            <div className="text-[#F76363]">Price</div>
+                            <p className="opacity-50 truncate">Which price do you prefer?</p>
+                        </div>
+                        
+                        <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="min-w-0 montserrat-cason">
+                            <div className="text-[#F76363]">Check In</div>
+                            <p className="opacity-50 truncate">Add Dates</p>
+                        </div>
+
+                        <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="min-w-0 montserrat-cason">
+                            <div className="text-[#F76363]">Check Out</div>
+                            <p className="opacity-50 truncate">Add Dates</p>
+                        </div>
+
+                        <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="min-w-0 montserrat-cason">
+                            <div className="text-[#F76363]">Guest</div>
+                            <p className="opacity-50 truncate">Add Guests</p>
+                        </div>
+
+                        {/* Search button — one element, adapts via classes instead of two separate divs */}
+                        <div className="col-span-2 md:col-span-1 flex justify-center md:justify-end min-w-0">
+                            <div 
+                                onMouseEnter={handleMouseEnter} 
+                                onMouseLeave={handleMouseLeave} 
+                                className="flex items-center justify-center gap-2 w-full md:w-auto mt-2 md:mt-0 bg-[#F76363] text-white rounded-2xl md:rounded-full px-4 py-2 md:p-3 md:aspect-square cursor-pointer"
+                            >
+                                <i className="ri-search-line"></i>
+                                <span className="montserrat-bold text-sm md:hidden">Search</span>
                             </div>
                         </div>
                     </div>
                 </div>
-               
-       
-                    {/* <img className="w-full h-full opacity-75" src={Sukura}></img> */}
-                </>
-        )
-    }
+            </div>
+        </div>
+        </>
+    )
+}
 
-    export default Hero
+export default Hero

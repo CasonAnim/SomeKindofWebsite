@@ -12,6 +12,9 @@ import A1 from './test/A1'
 import React , {useState} from 'react';
 import {Route , Routes} from "react-router-dom"
 import 'remixicon/fonts/remixicon.css'
+import RoomDetail from './RoomDetails.jsx';
+import Experience from './pages/experience.jsx';
+import Contact from './pages/StudioComponent/Contact.jsx';
 function App() {
   return (
     <>
@@ -20,6 +23,9 @@ function App() {
   
     <Route exact path="/" element={<Bush/>} />
     <Route  path="/studio" element={<Studio/>} />
+    <Route  path="/exp" element={<Experience/>} />
+    <Route  path="/contact" element={<Contact/>} />
+    <Route path="/room/:roomId" element={<RoomDetail/>} />
     {/* <Menu/>
     <Bush/> */}
     
