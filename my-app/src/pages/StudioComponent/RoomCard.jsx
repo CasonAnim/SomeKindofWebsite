@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 function RoomCard(props) {
     return (
-        <Link to={`/room/${props.id}`} className="block w-full max-w-sm">
+        <Link to={`/studio/${props.id}`} className="block w-full max-w-sm">
             <div className="w-full max-w-sm border-black rounded-xl sm:rounded-2xl border-2 sm:border-4 h-auto shadow-md sm:shadow-lg shadow-black pb-2 sm:pb-2.5 mt-3 sm:mt-5.5 mb-3 sm:mb-5.5 hover:scale-[1.02] transition-transform duration-200">
                 <div className="relative w-full aspect-[4/3] overflow-hidden rounded-xl sm:rounded-2xl">
                     <img className="absolute size-full rounded-xl sm:rounded-2xl object-cover object-center" src={props.img} />

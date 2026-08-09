@@ -29,7 +29,7 @@ function App() {
     <Route  path="/contact" element={<Contact/>} />
     <Route  path="/member" element={<Member/>} />
     <Route  path="/features" element={<Features/>} />
-    <Route path="/room/:roomId" element={<RoomDetail/>} />
+    <Route path="/studio/:roomId" element={<RoomDetail/>} />
     {/* <Menu/>
     <Bush/> */}
     
