@@ -15,7 +15,7 @@ function Footer() {
                         A majestic hotel with a good design
                     </p>
                     <a 
-                        href="https://github.com/" 
+                        href="https://github.com/CasonAnim/SomeKindofWebsite" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="mt-2 flex items-center gap-2 w-fit bg-gray-200 hover:bg-gray-300 transition-colors duration-200 rounded-lg px-4 py-2 montserrat-bold text-sm text-[#484848]"

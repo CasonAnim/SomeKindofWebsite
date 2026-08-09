@@ -9,8 +9,8 @@ function Navbar() {
         { label: "Home", to: "/" },
         { label: "Studio", to: "./studio" },
         { label: "Experiences", href: "./exp" },
-        { label: "Features", href: "./" },
-        { label: "Members", href: "./" },
+        { label: "Features", href: "./features" },
+        { label: "Members", href: "./member" },
         { label: "Contact", href: "./contact" },
     ]
 
@@ -39,10 +39,10 @@ function Navbar() {
                     <img src={pim} className=" absolute object-fill object-center h-full w-full" />
                 </div>
                 <div className="opacity-50 transition-opacity duration-200 hover:opacity-100">
-                    <Link to="./">Features</Link>
+                    <Link to="./features">Features</Link>
                 </div>
                 <div className="opacity-50 transition-opacity duration-200 hover:opacity-100">
-                    <Link to="./">Members</Link>
+                    <Link to="./member">Members</Link>
                 </div>
                 <div className="opacity-50 transition-opacity duration-200 hover:opacity-100">
                     <Link to="./contact">Contact</Link>

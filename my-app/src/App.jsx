@@ -15,6 +15,8 @@ import 'remixicon/fonts/remixicon.css'
 import RoomDetail from './RoomDetails.jsx';
 import Experience from './pages/Experience.jsx';
 import Contact from './pages/StudioComponent/Contact.jsx';
+import Member from './Member.jsx'
+import Features  from './Features.jsx';
 function App() {
   return (
     <>
@@ -25,6 +27,8 @@ function App() {
     <Route  path="/studio" element={<Studio/>} />
     <Route  path="/exp" element={<Experience/>} />
     <Route  path="/contact" element={<Contact/>} />
+    <Route  path="/member" element={<Member/>} />
+    <Route  path="/features" element={<Features/>} />
     <Route path="/room/:roomId" element={<RoomDetail/>} />
     {/* <Menu/>
     <Bush/> */}
