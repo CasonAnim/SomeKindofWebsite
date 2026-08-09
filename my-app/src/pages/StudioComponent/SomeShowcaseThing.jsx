@@ -3,7 +3,7 @@ import Larp from "../../assets/Larp.jpg"
 import RoomCard from "./RoomCard"
 
 import p1 from '../../assets/PicSet_1/pic_1.jpg'
-import p2 from '../../assets/PicSet_2/pic_2.jpg'
+import p2 from '../../assets/picSet_2/pic_2.jpg'
 import p3 from '../../assets/PicSet_3/pic_3.jpg'
 import p4 from '../../assets/PicSet_4/pic_4.jpg'
 import p5 from '../../assets/PicSet_5/pic_5.jpg'
