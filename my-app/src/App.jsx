@@ -13,7 +13,7 @@ import React , {useState} from 'react';
 import {Route , Routes} from "react-router-dom"
 import 'remixicon/fonts/remixicon.css'
 import RoomDetail from './RoomDetails.jsx';
-import Experience from './pages/experience.jsx';
+import Experience from './pages/Experience.jsx';
 import Contact from './pages/StudioComponent/Contact.jsx';
 function App() {
   return (
